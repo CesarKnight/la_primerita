@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:la_primerita/src/Widgets/basic_container.dart';
+import 'package:la_primerita/src/Widgets/radius_container.dart';
 import 'package:la_primerita/src/Widgets/textomio.dart';
 import 'package:la_primerita/src/Widgets/border_container.dart';
 
@@ -26,7 +27,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: BorderContainer()
+        child: RadiusContainer()
       ) 
     );
   }
