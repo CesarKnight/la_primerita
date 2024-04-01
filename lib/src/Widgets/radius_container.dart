@@ -12,14 +12,13 @@ class RadiusContainer extends StatelessWidget {
       decoration: BoxDecoration(
         color: const Color.fromARGB(255, 64, 91, 104),
         border: Border.all(
-          color: Colors.white,
-          width: 5.0
-       ),
-        borderRadius: BorderRadius.circular(22.0),
-        image: const DecorationImage(
-           image: NetworkImage('https://c.wallhere.com/photos/67/d0/mika_pikazo_digital_art_artwork_illustration_women_anime_girls_colorful_abstract-2221772.jpg!d')
-        ) 
-        
+          color: const Color.fromARGB(255, 237, 141, 25),
+          width: 5.05
+        ),
+      borderRadius: const BorderRadius.only(
+        topLeft: Radius.circular(25),
+        bottomRight: Radius.circular(25)
+      ),        
       ),
       child: const Text('TOP 10 weones', 
         style: TextStyle(

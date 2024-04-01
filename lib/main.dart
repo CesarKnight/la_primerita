@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:la_primerita/src/Widgets/basic_container.dart';
+import 'package:la_primerita/src/Widgets/imagen_container.dart';
 import 'package:la_primerita/src/Widgets/radius_container.dart';
 import 'package:la_primerita/src/Widgets/textomio.dart';
 import 'package:la_primerita/src/Widgets/border_container.dart';
@@ -25,9 +26,29 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: RadiusContainer()
+    return Scaffold(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            height: 100,
+            width: 150,
+            color: Colors.red,
+          ),
+          Container(
+            height: 100,
+            width: 150,
+            color: Colors.blue,
+          ),
+          Container(
+            height: 100,
+            width: 150,
+            color: Colors.yellow,
+          ),
+          const ImageContainer(),
+          const BasicContainer(),
+        ],
       ) 
     );
   }
