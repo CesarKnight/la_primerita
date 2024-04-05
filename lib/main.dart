@@ -1,6 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 import 'package:la_primerita/src/Widgets/basic_container.dart';
+import 'package:la_primerita/src/Widgets/custom_row.dart';
 import 'package:la_primerita/src/Widgets/imagen_container.dart';
 import 'package:la_primerita/src/Widgets/radius_container.dart';
 import 'package:la_primerita/src/Widgets/textomio.dart';
@@ -26,30 +29,8 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Container(
-            height: 100,
-            width: 150,
-            color: Colors.red,
-          ),
-          Container(
-            height: 100,
-            width: 150,
-            color: Colors.blue,
-          ),
-          Container(
-            height: 100,
-            width: 150,
-            color: Colors.yellow,
-          ),
-          const ImageContainer(),
-          const BasicContainer(),
-        ],
-      ) 
+    return const SafeArea(
+        child: CustomRow() 
     );
   }
 }
