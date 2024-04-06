@@ -8,6 +8,7 @@ import 'package:la_primerita/src/Widgets/imagen_container.dart';
 import 'package:la_primerita/src/Widgets/radius_container.dart';
 import 'package:la_primerita/src/Widgets/textomio.dart';
 import 'package:la_primerita/src/Widgets/border_container.dart';
+import 'package:la_primerita/src/Widgets/custom_listview.dart';
 
 void main(){
   return runApp(const MyApp());
@@ -31,7 +32,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: SafeArea(
-          child: CustomRow() 
+        child: CustomListview() 
       ),
     );
   }
