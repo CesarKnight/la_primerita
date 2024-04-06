@@ -29,8 +29,10 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
-        child: CustomRow() 
+    return const Scaffold(
+      body: SafeArea(
+          child: CustomRow() 
+      ),
     );
   }
 }
